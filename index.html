@@ -1,233 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eric – Fitness & Workout Page</title>
-  <style>
-    /* General Body & Fonts */
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f3f7ff;
-      color: #0f172a;
-      margin: 0;
-      line-height: 1.6;
-      padding-top: 70px; /* for fixed nav */
-    }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Eric Sumsion Resume" />
+    <meta name="author" content="Eric Sumsion" />
+    <title>Eric Sumsion - Resume</title>
 
-    /* Header */
-    header {
-      background: linear-gradient(to right, #0d6efd, #3a8dff);
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      box-shadow: 0 6px 20px rgba(16,24,40,0.2);
-    }
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
-    header h1 {
-      margin: 0;
-      font-size: 2.4rem;
-    }
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
-    header p {
-      font-size: 1.1rem;
-      margin-top: 10px;
-    }
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
 
-    /* Sections */
-    .section {
-      background-color: #ffffff;
-      margin: 30px auto;
-      padding: 25px 20px;
-      border-radius: 12px;
-      max-width: 900px;
-      box-shadow: 0 4px 15px rgba(16,24,40,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    .section:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(16,24,40,0.15);
-    }
-
-    h2 {
-      color: #0d6efd;
-      border-bottom: 2px solid #0d6efd;
-      padding-bottom: 6px;
-      display: inline-block;
-      margin-bottom: 15px;
-    }
-
-    /* Images */
-    img {
-      max-width: 300px;
-      height: auto;
-      border-radius: 12px;
-      margin-top: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    img:hover {
-      transform: scale(1.03);
-    }
-
-    /* Buttons */
-    button {
-      background-color: #0d6efd;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s ease, transform 0.2s ease;
-      margin: 5px;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-      transform: scale(1.05);
-    }
-
-    /* Workout Generator */
-    .generator { margin-top: 15px; }
-    .result {
-      font-weight: bold;
-      color: #0d3b99;
-      margin-top: 10px;
-      font-size: 1.1rem;
-    }
-
-    /* Iframes */
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      border-radius: 12px;
-      margin-top: 15px;
-      box-shadow: 0 6px 18px rgba(16,24,40,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    iframe:hover {
-      transform: scale(1.02);
-    }
-
-    /* Navigation Bar */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #ffffff;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      z-index: 1000;
-      padding: 10px 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #0d6efd;
-      font-weight: bold;
-      margin: 0 15px;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #003f7f;
-    }
-
-  </style>
+    <!-- Custom styles -->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body>
+<body id="page-top">
 
-  <!-- Navigation -->
-  <nav>
-    <a href="startbootstrap-resume-gh-pages/index.html">Resume</a>
-    <a href="ApexGym_Arcade/index.html" target="_blank">Game</a>
-  </nav>
+<!-- Back link to Scratch/Fitness page -->
+<div style="text-align: center; margin: 20px;">
+  <a href="../scratch/index.html" 
+     style="background-color: #bd5d38; color: white; padding: 10px 20px; 
+            border-radius: 6px; text-decoration: none; font-weight: bold;">
+    ← Back to Fitness
+  </a>
+</div>
 
-  <!-- Header -->
-  <header>
-    <h1>Eric Sumsion — Fitness & Workout Page</h1>
-    <p>Welcome! Check workouts, creatine info, videos, and fitness dashboards.</p>
-  </header>
-
-  <!-- Tableau / Dashboard Section -->
-  <section class="section" id="tableau">
-    <h2>Activity & Fitness Stats</h2>
-    <iframe src="https://public.tableau.com/views/FitabaseFitnessdataDashboard/Dashboard1?:showVizHome=no&:embed=true"></iframe>
-  </section>
-
-  <!-- Creatine Section -->
-  <section class="section" id="creatine">
-    <h2>Creatine Essentials</h2>
-    <p>Creatine boosts strength, recovery, and energy for workouts.</p>
-    <ol>
-      <li>Increased strength & power</li>
-      <li>Faster recovery between workouts</li>
-      <li>Support for lean muscle mass</li>
-    </ol>
-    <img src="https://m.media-amazon.com/images/I/71L-lpp46XL._AC_UF1000,1000_QL80_.jpg" alt="Creatine supplement">
-  </section>
-
-  <!-- Workout Generator -->
-  <section class="section" id="workouts">
-    <h2>Workout Generator</h2>
-    <p>Click below to get a short random workout session with reps!</p>
-    <div class="generator">
-      <button id="generate">Generate Workout</button>
-      <div id="result" class="result"></div>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Eric Sumsion</span>
+        <span class="d-none d-lg-block">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" 
+                 src="assets/img/profile.jpg" 
+                 alt="Eric Sumsion" />
+        </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+        </ul>
     </div>
-  </section>
+</nav>
 
-  <!-- YouTube Video -->
-  <section class="section" id="video">
-    <h2>Training Video</h2>
-    <iframe src="https://www.youtube.com/embed/2tM1LFFxeKg" title="Workout Video" allowfullscreen></iframe>
-  </section>
+<!-- Page Content-->
+<div class="container-fluid p-0">
 
-  <!-- Scripts -->
-  <script>
-    const workouts = [
-      { name: "Push-ups", url: "https://www.google.com/search?q=push-ups+exercise" },
-      { name: "Squats", url: "https://www.google.com/search?q=squats+exercise" },
-      { name: "Sit-ups", url: "https://www.google.com/search?q=sit-ups+exercise" },
-      { name: "Jumping Jacks", url: "https://www.google.com/search?q=jumping+jacks+exercise" },
-      { name: "Burpees", url: "https://www.google.com/search?q=burpees+exercise" },
-      { name: "Lunges", url: "https://www.google.com/search?q=lunges+exercise" },
-      { name: "Pull-ups", url: "https://www.google.com/search?q=pull-ups+exercise" },
-      { name: "Mountain Climbers", url: "https://www.google.com/search?q=mountain+climbers+exercise" },
-      { name: "Plank Shoulder Taps", url: "https://www.google.com/search?q=plank+shoulder+taps+exercise" },
-      { name: "Dumbbell Curls", url: "https://www.google.com/search?q=dumbbell+curls+exercise" },
-      { name: "Bodyweight Squats", url: "https://www.google.com/search?q=bodyweight+squats+exercise" },
-      { name: "Plank", url: "https://www.google.com/search?q=plank+exercise" }
-    ];
+    <!-- About-->
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-0">Eric <span class="text-primary">Sumsion</span></h1>
+            <div class="subheading mb-5">
+                BYU Sophomore | Prospective Supply Chain Student (Marriott School of Business) | 21 years old
+            </div>
+            <p class="lead mb-5">
+                I am a dedicated and hands-on learner, passionate about gaining experience in global supply chain processes. I have worked in warehouse operations, pest control, network support, and on a mission in New Jersey, developing skills in teamwork, problem solving, and customer service. I enjoy combining practical work experience with learning new technologies, including AI, Excel, Tableau, and HTML.
+            </p>
+        </div>
+    </section>
+    <hr class="m-0" />
 
-    const repsOptions = [
-      "10 reps", "12 reps", "15 reps", "20 reps", "30 seconds", "45 seconds", "1 min"
-    ];
+    <!-- Experience-->
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Experience</h2>
 
-    document.getElementById("generate").addEventListener("click", () => {
-      const selected = [];
-      while(selected.length < 3) { // generate 3 exercises
-        const w = workouts[Math.floor(Math.random() * workouts.length)];
-        if(!selected.includes(w)) selected.push(w);
-      }
-      const resultDiv = document.getElementById("result");
-      resultDiv.innerHTML = "";
-      selected.forEach(w => {
-        const reps = repsOptions[Math.floor(Math.random() * repsOptions.length)];
-        const p = document.createElement("p");
-        p.innerHTML = `${w.name} — ${reps} — <a href="${w.url}" target="_blank">Example</a>`;
-        resultDiv.appendChild(p);
-      });
-    });
-  </script>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Technician</h3>
+                    <div class="subheading mb-3">Greenline Pest Solutions</div>
+                    <p>Provide customer service while performing pest control operations, developing strong communication skills and attention to detail.</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">May 2025 - Present</span></div>
+            </div>
 
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Network Technician</h3>
+                    <div class="subheading mb-3">BYU Campus (OIT)</div>
+                    <p>Worked hands-on with cables and link runners, tested network speeds, and collaborated on team projects. Developed troubleshooting, problem solving, and technical skills.</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">October 2024 - May 2025</span></div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Warehouse Associate (Night Crew)</h3>
+                    <div class="subheading mb-3">Trove Brands</div>
+                    <p>Handled inbound/outbound shipments, SKU tracking, and picking/packing processes. Gained early experience in logistics, supply chain operations, and teamwork.</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">March 2022 - August 2022</span></div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Missionary</h3>
+                    <div class="subheading mb-3">New Jersey Mission</div>
+                    <p>Served in the community for two years, learning Spanish and developing strong interpersonal, communication, and problem-solving skills.</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">2022 - 2024</span></div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- Education-->
+    <section class="resume-section" id="education">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Education</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Brigham Young University</h3>
+                    <div class="subheading mb-3">Bachelor of Science (Prospective in Global Supply Chain)</div>
+                    <div>Overall GPA: 3.6/4</div>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">2022 - Present</span></div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- Skills-->
+    <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Skills</h2>
+            <div class="subheading mb-3">Languages & Tools</div>
+            <ul class="list-inline dev-icons">
+                <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                <li class="list-inline-item"><i class="fab fa-excel"></i></li>
+                <li class="list-inline-item"><i class="fab fa-tableau"></i></li>
+            </ul>
+            <div class="subheading mb-3">Professional Skills</div>
+            <ul class="fa-ul mb-0">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span> Customer Service & Communication</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span> Supply Chain Operations</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span> Troubleshooting & Technical Skills</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span> Teamwork & Leadership</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span> Languages: Spanish (Proficient), Chinese (Intermediate)</li>
+            </ul>
+        </div>
+    </section>
+    <hr class="m-0" />
+
+    <!-- Interests-->
+    <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Interests</h2>
+            <p>Outside of work and school, I enjoy hands-on building, crafting, biking, and hiking. I like exploring creative solutions, learning new technologies, and applying AI to improve efficiency and problem solving. I enjoy staying active and engaging in team sports such as basketball, football, and pickleball. I thrive on projects that challenge me to combine creativity with practical work experience.</p>
+        </div>
+    </section>
+
+</div>
+
+<!-- Bootstrap core JS -->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS -->
+<script src="js/scripts.js"></script>
 </body>
 </html>
